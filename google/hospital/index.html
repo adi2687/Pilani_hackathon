@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #map {
+            height: 90%;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width:40p;
+            height:70px
+        }
+        nav div a{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            gap:10px;
+            color:black;
+            
+        }
+        
+        nav{
+            display: flex;
+            flex-direction: row;
+            gap:20px
+        }
+        
+        div {
+            display: flex;
+            justify-content: center;
+align-items: center;
+        }
+        button{
+            height:auto;
+            border-radius: 4px;
+            font-weight: bold;
+            color:black;
+            cursor: pointer;
+            font-family: sans-serif;
+            border:2px solid grey;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+        }
+        body::-webkit-scrollbar {
+            width: 0px;  /* Set the width of the scrollbar */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="../../">
+                <img src="../../image/logo.png" alt="">
+            MedPulse
+            </a>
+        </div>
+        <div>
+            <button>Street view</button>
+        </div>
+    </nav>
+    <div id="map"></div>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZqwEt5z2Ko9F4Bpq44S2RNPSDmznesx4&callback=initMap&libraries=places&v=weekly"
+        async defer>
+        </script>
+    <script>
+        let map;
+
+const urlparams=new URLSearchParams(window.location.search)
+const lat=parseFloat(urlparams.get('lat'))
+const lon=parseFloat(urlparams.get('lon'))
+console.log(lat)
+console.log(lon)
+const centerCoords = { lat: lat, lng: lon };
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: centerCoords,
+                zoom: 15,
+            });
+
+    
+                const marker = new google.maps.Marker({
+                    position: centerCoords,
+                    map: map,
+                    title: "Marker Title Example", 
+                });
+    
+                const infoWindow = new google.maps.InfoWindow({
+                    content: `<h3>Custom Marker</h3><p>This is an example marker at Jaipur.</p>`,
+                });
+    
+                marker.addListener("click", () => {
+                    infoWindow.open(map, marker);
+                });
+        }
+        function streetview() {
+            const panorama = new google.maps.StreetViewPanorama(document.getElementById("map"), {
+                position: { lat: lat, lng:lon }, 
+                pov: { heading: 165, pitch: 0 },
+                zoom: 1,
+            });
+
+            map.setStreetView(panorama);
+        }
+        let  street=false
+        document.querySelector("button").addEventListener("click",()=>{
+            if (!street){
+                streetview()
+                street=true
+                document.querySelector("button").textContent="Map view"
+            }
+            else{
+                initMap()
+                street=false
+                document.querySelector("button").textContent="Street view"
+
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>

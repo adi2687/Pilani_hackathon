@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps Features</title>
+    <style>
+        #map {
+            height: 90%;
+            border: 2px solid red;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <button id="addMarker">Add Marker</button>
+    <button id="showStreetView">Street View</button>
+    <button id="findHospitals">Find Hospitals</button>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZqwEt5z2Ko9F4Bpq44S2RNPSDmznesx4&callback=initMap&libraries=places&v=weekly"
+        async defer></script>
+
+    <script>
+        let map;
+        const centerCoords = { lat: 26.4499, lng:  74.6399 }; 
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: centerCoords,
+                zoom: 12,
+            });
+        }
+
+        function AddMarker() {
+            const markerPosition = { lat: 26.4499, lng: 75.73725 }; 
+
+            const marker = new google.maps.Marker({
+                position: markerPosition,
+                map: map,
+                title: "Marker Title Example", 
+            });
+
+            const infoWindow = new google.maps.InfoWindow({
+                content: `<h3>Custom Marker</h3><p>This is an example marker at Jaipur.</p>`,
+            });
+
+            marker.addListener("click", () => {
+                infoWindow.open(map, marker);
+            });
+        }
+
+        function streetview() {
+            const panorama = new google.maps.StreetViewPanorama(document.getElementById("map"), {
+                position: { lat: 26.9124, lng: 75.7873 }, 
+                pov: { heading: 165, pitch: 0 },
+                zoom: 1,
+            });
+
+            map.setStreetView(panorama);
+        }
+
+        function locator() {
+            const service = new google.maps.places.PlacesService(map);
+
+            service.nearbySearch(
+                {
+                    location: centerCoords,
+                    radius: 15000, 
+                    type: ["hospital"], 
+                },
+                (results, status) => {
+                    if (status === google.maps.places.PlacesServiceStatus.OK) {
+                        results.forEach((place) => {
+                            const marker = new google.maps.Marker({
+                                position: place.geometry.location,
+                                map: map,
+                                title: place.name,
+                            });
+
+                            const infoWindow = new google.maps.InfoWindow({
+                                content: `
+                                    <div>
+                                        <h3>${place.name}</h3>
+                                        <p>Address: ${place.vicinity}</p>
+                                        <p>Rating: ${place.rating || "N/A"}</p>
+                                    </div>
+                                `,
+                            });
+
+                            marker.addListener("click", () => {
+                                infoWindow.open(map, marker);
+                            });
+                        });
+                    } else {
+                        alert("Places search failed: " + status);
+                    }
+                }
+            );
+        }
+
+        document.getElementById("addMarker").addEventListener("click", AddMarker);
+        document.getElementById("showStreetView").addEventListener("click", streetview);
+        document.getElementById("findHospitals").addEventListener("click", locator);
+    </script>
+</body>
+
+</html>
