@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #17206d;
+    /* Violet blue theme */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 10%;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 60px;
+    height: 50px
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 120%;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #A9A9F5;
+    /* Light violet blue on hover */
+}
+
+.nav-links a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #A9A9F5;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+}
+
+#login {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin-top: -0.2%;
+    cursor: pointer;
+}
+
+.detail {
+    width: 100%;
+}
+
+.main {
+    /* border:4px solid green; */
+    display: flex;
+    flex-direction: column;
+}
+
+.det {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    font-weight: bold;
+    color: grey
+}
+
+.det div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: grey
+}
+
+.det :nth-child(1) {
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+
+/* .det :nth-child(1):hover{
+    border:1px solid grey;
+    box-shadow:0 0 10px rgba(0,0,0,0.5)
+} */
+.det :nth-child(2) {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-display: inherit;
+    font-size: 40px
+}
+
+.name :nth-child(1) {
+    font-weight: 700;
+    font-size: 50px
+}
+
+.det :nth-child(2), .det :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    color: black
+}
+
+.det .name {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: left; */
+}
+
+.main .det img {
+    width: 345px;
+    height: 320px;
+    border: 3px solid grey;
+    border-radius: 48%;
+}
+
+.edit {
+    display: none;
+}
+
+.edit.display {
+
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    background-color: rgb(108, 108, 173);
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+
+
+}
+
+.edit input {
+    display: none;
+}
+
+.edit label {
+    background-color: rgb(35, 35, 82);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.cross {
+    font-size: 30px;
+    margin-left: auto;
+    color: white;
+    cursor: pointer;
+}

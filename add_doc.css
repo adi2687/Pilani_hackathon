@@ -1,0 +1,20 @@
+.add_doc{
+    display: none;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+.add_doc .cros{
+    color:White;
+    margin-left:90%;
+    font-size: 30px;
+cursor: pointer;
+}
+.add_doc h2{
+    color:white
+}
+
+.logindoc.disp{
+    display: block;
+}

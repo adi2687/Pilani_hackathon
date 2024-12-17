@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediPulse-Appointment</title>
+    <link rel="shortcut icon" href="../image/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="stylesheet" href="popup.css">
+    <style>
+        .preferred_doctors input {
+            display: none;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 36%;
+            min-height: 100%;
+
+        }
+
+        .container img {
+            width: 90px;
+            height: 80px
+        }
+
+        nav a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+            cursor: pointer;
+            margin-top:20px
+        }
+        nav a h2{
+            font-size: 40px;
+        }
+        .container{
+            margin-top:40px
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <nav>
+        <h2>MedPulse</h2>
+    </nav> -->
+    <div class="container">
+        <nav><a href="../">
+            <img src="../image/logo.png" alt="">
+
+            <h2>MedPulse</h2>
+            </a>
+        </nav>
+        <h3>Book an Appointment</h3>
+
+        <!-- Doctor Search Form -->
+        <form class="doctor-search-form" id="doctor-search-form" method="post" action="book_appointment.php">
+            <div class="form-group">
+                <label for="doctor-name">Search Doctor by Name</label>
+                <input type="text" id="doctor-name" name="name" placeholder="Enter doctor's name">
+            </div>
+
+            <p>Or</p>
+            <div class="form-group">
+                <label for="disease">Search by Disease or Condition</label>
+                <input type="text" id="disease" name="disease" placeholder="Enter your condition">
+            </div>
+
+            <button class="search_doc">Search Doctor</button>
+            <div id="doctor-suggestions" class="doctor-suggestions">
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time">
+            </div>
+            <div class="preferred_doctors">
+                <label for="pre_doc">Preferred Doctors</label>
+                <div class="pref" id="pref-list"></div>
+                <input type="text" name="preferred_doctors" value="">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Information (Optional)</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any special request or message"></textarea>
+            </div>
+
+            <button class="submitbut">Book Appointment</button>
+
+
+        </form>
+
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="closePopupBtn" class="close-btn">&times;</span>
+                <div id="popup-result"></div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+            const openPopupBtn = document.getElementById('openPopupBtn');
+            const closePopupBtn = document.getElementById('closePopupBtn');
+            const popup = document.getElementById('popup');
+            const popupResult = document.getElementById('popup-result');
+            const preferredDoctorsDiv = document.querySelector('.pref');
+            const doctorsearch = document.querySelector(".search_doc")
+            const doc_pref_input = document.querySelector(".container form .preferred_doctors input")
+            doctorsearch.onclick = function (e) {
+                e.preventDefault();
+
+                const formData = new FormData(form);
+                const xhr = new XMLHttpRequest();
+
+                xhr.open("POST", "book_appointment.php", true);
+
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        let data = xhr.responseText;
+                        popupResult.innerHTML = data;
+                        popup.style.display = 'block';
+
+                        document.querySelectorAll('.doctor-checkbox').forEach(checkbox => {
+                            checkbox.addEventListener('change', function () {
+                                if (this.checked) {
+                                    addDoctorToPreferred(this.value);
+                                } else {
+                                    removeDoctorFromPreferred(this.value);
+                                }
+                            });
+                        });
+                    } else {
+                        console.error('Error:', xhr.statusText);
+                    }
+                };
+
+                xhr.onerror = function () {
+                    console.error('Request failed');
+                };
+
+                xhr.send(formData);
+                console.log(preferredDoctorsDiv.textContent)
+                doc_pref_input.value = preferredDoctorsDiv.textContent.trim()
+                console.log(doc_pref_input.value)
+            };
+
+            closePopupBtn.addEventListener('click', function () {
+                popup.style.display = 'none';
+            });
+
+            window.addEventListener('click', function (event) {
+                if (event.target === popup) {
+                    popup.style.display = 'none';
+                }
+            });
+
+            function addDoctorToPreferred(doctorName) {
+                const existingDoctors = Array.from(preferredDoctorsDiv.children).map(child => child.textContent.trim());
+                if (!existingDoctors.includes(doctorName)) {
+                    const doctorDiv = document.createElement('div');
+                    doctorDiv.textContent = doctorName;
+                    preferredDoctorsDiv.appendChild(doctorDiv);
+                }
+            }
+
+            function removeDoctorFromPreferred(doctorName) {
+                const doctorDivs = Array.from(preferredDoctorsDiv.children);
+                doctorDivs.forEach(div => {
+                    if (div.textContent.trim() === doctorName) {
+                        preferredDoctorsDiv.removeChild(div);
+                    }
+                });
+            }
+        });
+
+
+        const submitbutton = document.querySelector(".submitbut");
+        const form = document.querySelector("form");
+        const preferredDoctorsDiv = document.getElementById("pref-list");
+        const docPrefInput = document.querySelector("input[name='preferred_doctors']");
+
+        form.onsubmit = (event) => {
+            event.preventDefault(); // Prevent the default form submission
+
+            docPrefInput.value = preferredDoctorsDiv.textContent; // Set the value of the hidden input to preferred doctors list
+
+            let xhrmain = new XMLHttpRequest();
+            xhrmain.open("POST", "submit_app.php", true);
+
+            xhrmain.onload = () => {
+                if (xhrmain.status == 200) {
+                    const data = xhrmain.responseText.trim();
+                    console.log(data);
+                    form.reset()
+                    status.textContent = "Registration done , register a new apppointment in 5 seconds"
+                    setinterval(() => {
+                        status.textContent = ""
+                        form.reset();
+
+                    }, 5000)
+
+                }
+            };
+
+            const formData = new FormData(form);
+
+            xhrmain.send(formData);
+        };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

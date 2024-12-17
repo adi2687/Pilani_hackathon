@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointments</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        nav img{
+            width:100px;
+            height:80px;
+            
+            
+        }
+        nav a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            color:grey;
+            font-weight:bold;
+            gap:40px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        nav div{
+            margin-left :43%;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav >
+        <a href="../">
+        <img src="../image/logo.png" alt="">
+        MedPulse
+        </a>
+        <div>Patient Records</div>
+    </nav>
+    <div class="details-container" id="appointmentsContainer">
+    </div>
+    <div class="loader" id="loadingSpinner" style="display: none;"></div>
+    <script>
+        let xhr = new XMLHttpRequest()
+        xhr.open('GET', 'fetch_appointments.php', true)
+        xhr.onload = function () {
+            if (xhr.status == 200) {
+                document.getElementById("appointmentsContainer").innerHTML = xhr.responseText
+            }
+        }
+        xhr.send()
+    </script>
+</body>
+
+</html>

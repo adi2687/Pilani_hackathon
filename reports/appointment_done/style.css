@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e5f5;
+    /* Light purple background */
+    color: #4a148c;
+    /* Dark purple text color */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #6a1b9a;
+    /* Darker purple for headings */
+    text-align: center;
+    padding: 20px;
+    background-color: #d1c4e9;
+    /* Light purple background for header */
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #6a1b9a;
+    /* Purple shade for labels */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1c4e9;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #6a1b9a;
+    outline: none;
+}
+
+.form-group button {
+    background-color: #6a1b9a;
+    /* Purple button background */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-group button:hover {
+    background-color: #4a148c;
+    /* Darker purple on hover */
+}
+
+.appointment-details {
+    background-color: #ffffff;
+    border: 1px solid #d1c4e9;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-details h2 {
+    color: #6a1b9a;
+    margin-bottom: 15px;
+}
+
+.appointment-details p {
+    color: #4a148c;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.appointment-details p strong {
+    color: #6a1b9a;
+}
+
+.appointment-details hr {
+    border: 0;
+    border-top: 1px solid #d1c4e9;
+    margin: 20px 0;
+}

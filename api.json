@@ -1,0 +1,864 @@
+[
+    {
+        "disease": "Hemophilia A",
+        "symptoms": [
+            "Prolonged bleeding",
+            "Easy bruising",
+            "Joint pain and swelling",
+            "Unexplained nosebleeds",
+            "Blood in urine or stool"
+        ],
+        "treatment": [
+            "Replacement therapy with clotting factor VIII",
+            "Desmopressin (DDAVP)",
+            "Antifibrinolytic medicines",
+            "Gene therapy",
+            "Physical therapy for joint damage"
+        ]
+    },
+    {
+        "disease": "Hepatitis A",
+        "symptoms": [
+            "Fatigue",
+            "Sudden nausea and vomiting",
+            "Abdominal pain or discomfort",
+            "Loss of appetite",
+            "Fever",
+            "Dark urine",
+            "Jaundice (yellowing of the skin and eyes)"
+        ],
+        "treatment": [
+            "Rest and hydration",
+            "Avoiding alcohol",
+            "Vaccination for prevention",
+            "Monitoring liver function",
+            "Healthy diet"
+        ]
+    },
+    {
+        "disease": "Abdominal Aortic Aneurysm",
+        "symptoms": [
+            "A pulsating feeling near the navel",
+            "Deep, constant pain in the abdomen or side",
+            "Back pain"
+        ],
+        "treatment": [
+            "Monitoring with regular ultrasound or CT scans",
+            "Medications to lower blood pressure",
+            "Surgery (open repair or endovascular aneurysm repair)"
+        ]
+    },
+    {
+        "disease": "Alpha 1 Antitrypsin Deficiency",
+        "symptoms": [
+            "Shortness of breath",
+            "Wheezing",
+            "Repeated lung infections",
+            "Fatigue",
+            "Jaundice",
+            "Unintentional weight loss"
+        ],
+        "treatment": [
+            "Alpha-1 proteinase inhibitor therapy",
+            "Bronchodilators",
+            "Pulmonary rehabilitation",
+            "Liver transplant (in severe cases)",
+            "Avoidance of smoking and other lung irritants"
+        ]
+    },
+    {
+        "disease": "Abdominal Adhesions",
+        "symptoms": [
+            "Chronic abdominal pain",
+            "Bloating",
+            "Bowel obstruction"
+        ],
+        "treatment": [
+            "Surgical removal of adhesions",
+            "Laparoscopic surgery",
+            "Pain management"
+        ]
+    },
+    {
+        "disease": "Heat Cramps",
+        "symptoms": [
+            "Painful muscle spasms",
+            "Sweating heavily during intense exercise",
+            "Thirst"
+        ],
+        "treatment": [
+            "Rest in a cool place",
+            "Hydration with electrolytes",
+            "Stretching and massaging muscles"
+        ]
+    },
+    {
+        "disease": "Abdominal Hernia",
+        "symptoms": [
+            "Visible bulge in the abdomen or groin",
+            "Pain or discomfort, especially when bending or lifting",
+            "Weakness, pressure, or a feeling of heaviness in the abdomen"
+        ],
+        "treatment": [
+            "Surgical repair (herniorrhaphy or hernioplasty)",
+            "Lifestyle changes to reduce strain (e.g., avoiding heavy lifting)",
+            "Pain management"
+        ]
+    },
+    {
+        "disease": "Abdominal Pain",
+        "symptoms": [
+            "Sharp, dull, or cramping pain in the abdomen",
+            "Bloating",
+            "Nausea or vomiting",
+            "Diarrhea or constipation"
+        ],
+        "treatment": [
+            "Over-the-counter pain relief (e.g., acetaminophen)",
+            "Antacids or acid reducers",
+            "Hydration and rest",
+            "Dietary changes",
+            "Medical intervention if necessary (depending on the cause)"
+        ]
+    },
+    {
+        "disease": "Abdominoplasty",
+        "symptoms": [
+            "Loose, sagging skin in the abdominal area",
+            "Weakened or separated abdominal muscles"
+        ],
+        "treatment": [
+            "Surgical procedure to remove excess skin and fat",
+            "Tightening of the abdominal muscles",
+            "Post-surgical care and recovery"
+        ]
+    },
+    {
+        "disease": "Ablation Therapy for Arrhythmias",
+        "symptoms": [
+            "Palpitations",
+            "Dizziness or light-headedness",
+            "Shortness of breath",
+            "Chest discomfort"
+        ],
+        "treatment": [
+            "Catheter ablation to destroy abnormal heart tissue",
+            "Medications to control heart rate or rhythm",
+            "Lifestyle modifications",
+            "Follow-up monitoring"
+        ]
+       
+    },
+
+    
+        {
+            "disease": "Endometrial Ablation",
+            "symptoms": [
+                "Heavy menstrual bleeding",
+                "Bleeding between periods",
+                "Painful periods",
+                "Large blood clots during menstruation"
+            ],
+            "treatment": [
+                "Endometrial ablation procedure to remove or destroy the uterine lining",
+                "Use of medications to manage bleeding before the procedure",
+                "Post-procedure care including rest and monitoring"
+            ]
+        },
+        {
+            "disease": "Heart Rhythm Disorders",
+            "symptoms": [
+                "Palpitations",
+                "Chest pain",
+                "Shortness of breath",
+                "Dizziness or fainting",
+                "Fatigue"
+            ],
+            "treatment": [
+                "Medications to regulate heart rhythm",
+                "Catheter ablation to correct abnormal electrical signals in the heart",
+                "Pacemaker or defibrillator implantation",
+                "Lifestyle changes including diet and exercise",
+                "Regular monitoring and follow-up care"
+            ]
+        },
+        {
+            "disease": "Abnormal Liver Enzymes",
+            "symptoms": [
+                "Fatigue",
+                "Jaundice (yellowing of the skin and eyes)",
+                "Abdominal pain",
+                "Nausea",
+                "Dark urine"
+            ],
+            "treatment": [
+                "Identifying and treating the underlying cause (e.g., liver disease, hepatitis, alcohol use)",
+                "Medications to manage symptoms",
+                "Lifestyle changes such as diet modification and avoiding alcohol",
+                "Regular monitoring of liver function tests"
+            ]
+        },
+        {
+            "disease": "Abnormal Vaginal Bleeding",
+            "symptoms": [
+                "Bleeding between periods",
+                "Heavy menstrual bleeding",
+                "Postmenopausal bleeding",
+                "Spotting after intercourse",
+                "Severe cramping or abdominal pain"
+            ],
+            "treatment": [
+                "Medications to regulate menstrual cycles (e.g., hormonal therapy)",
+                "Surgical procedures like dilation and curettage (D&C) or endometrial ablation",
+                "Treatment of underlying conditions such as fibroids or polyps",
+                "Monitoring and follow-up care"
+            ]
+        },
+        {
+            "disease": "Miscarriage",
+            "symptoms": [
+                "Vaginal bleeding",
+                "Cramping or pain in the abdomen or lower back",
+                "Passing tissue or clots from the vagina",
+                "Decrease in pregnancy symptoms (e.g., breast tenderness, nausea)"
+            ],
+            "treatment": [
+                "Rest and monitoring for incomplete miscarriage",
+                "Medications to manage bleeding and cramping",
+                "Surgical intervention if necessary (e.g., D&C)",
+                "Emotional support and counseling"
+            ]
+        },
+        {
+            "disease": "Cuts, Scrapes, and Puncture Wounds",
+            "symptoms": [
+                "Pain at the site of injury",
+                "Bleeding",
+                "Swelling",
+                "Redness around the wound",
+                "Possible infection (e.g., pus, fever)"
+            ],
+            "treatment": [
+                "Cleaning the wound with antiseptic",
+                "Applying bandages or dressings",
+                "Stitches or sutures for deep cuts",
+                "Tetanus shot if necessary",
+                "Antibiotics if infection is present"
+            ]
+        },
+        {
+            "disease": "Abscessed Tooth",
+            "symptoms": [
+                "Severe, persistent toothache",
+                "Swelling in the face or cheek",
+                "Tender, swollen lymph nodes under the jaw or neck",
+                "Sensitivity to hot or cold",
+                "Foul taste in the mouth"
+            ],
+            "treatment": [
+                "Draining the abscess",
+                "Root canal therapy",
+                "Tooth extraction in severe cases",
+                "Antibiotics to treat infection",
+                "Pain management"
+            ]
+        },
+        {
+            "disease": "Skin Abscesses",
+            "symptoms": [
+                "Painful, swollen, red lump on the skin",
+                "Warmth and tenderness at the site",
+                "Fever and chills (if infection spreads)",
+                "Pus drainage"
+            ],
+            "treatment": [
+                "Incision and drainage of the abscess",
+                "Antibiotics if infection is severe or spreading",
+                "Warm compresses to alleviate pain and promote drainage",
+                "Wound care and monitoring for signs of infection"
+            ]
+        },
+        {
+            "disease": "Amenorrhea",
+            "symptoms": [
+                "No menstrual period for three or more cycles",
+                "Headache or vision changes (if related to pituitary tumor)",
+                "Hair loss or excessive facial hair growth",
+                "Acne",
+                "Nipple discharge"
+            ],
+            "treatment": [
+                "Treatment of underlying causes (e.g., hormonal therapy, lifestyle changes)",
+                "Medications to induce menstruation",
+                "Surgery if necessary (e.g., for pituitary tumors)",
+                "Monitoring and follow-up care"
+            ]
+        },
+        {
+            "disease": "Abstinence",
+            "symptoms": [
+                "No direct symptoms (as it is a preventive measure)",
+                "May involve tracking menstrual cycles",
+                "Awareness of fertility signals"
+            ],
+            "treatment": [
+                "Education on fertility awareness methods",
+                "Support in maintaining abstinence",
+                "Counseling for reproductive health"
+            ]
+        },
+        {
+            "disease": "Child Abuse",
+            "symptoms": [
+                "Unexplained injuries (bruises, burns, fractures)",
+                "Fear of going home",
+                "Changes in behavior (aggression, withdrawal)",
+                "Poor hygiene",
+                "Delayed physical or emotional development"
+            ],
+            "treatment": [
+                "Immediate reporting to child protection services",
+                "Medical evaluation and treatment for physical injuries",
+                "Psychological counseling and therapy",
+                "Safe environment placement (e.g., foster care)",
+                "Legal action against perpetrators"
+            ]
+        },
+        
+            {
+                "disease": "Steroid Abuse",
+                "symptoms": [
+                    "Aggressive behavior ('roid rage')",
+                    "Severe acne",
+                    "Rapid muscle gain",
+                    "Mood swings",
+                    "Increased risk of heart disease",
+                    "Liver damage",
+                    "Infertility"
+                ],
+                "treatment": [
+                    "Discontinuation of steroid use",
+                    "Counseling and support groups",
+                    "Medical intervention for withdrawal symptoms",
+                    "Treatment for specific health complications (e.g., liver damage, cardiovascular issues)",
+                    "Hormonal therapy if necessary"
+                ]
+            },
+            {
+                "disease": "Khat Abuse",
+                "symptoms": [
+                    "Increased heart rate and blood pressure",
+                    "Euphoria followed by irritability",
+                    "Insomnia",
+                    "Loss of appetite",
+                    "Constipation",
+                    "Mouth sores"
+                ],
+                "treatment": [
+                    "Discontinuation of khat use",
+                    "Behavioral therapy and counseling",
+                    "Support for withdrawal symptoms",
+                    "Medical monitoring of cardiovascular health",
+                    "Nutritional support"
+                ]
+            },
+            {
+                "disease": "ObamaCare",
+                "symptoms": [
+                    "Increased access to health insurance",
+                    "Subsidies for low-income individuals",
+                    "Mandate to have health insurance",
+                    "Expansion of Medicaid",
+                    "Coverage for pre-existing conditions"
+                ],
+                "treatment": [
+                    "Enrollment in health insurance plans via ACA marketplaces",
+                    "Access to preventive care services",
+                    "Financial assistance for qualifying individuals",
+                    "Utilization of expanded Medicaid benefits",
+                    "Adherence to ACA regulations for health coverage"
+                ]
+            },
+            {
+                "disease": "Ascites",
+                "symptoms": [
+                    "Abdominal swelling",
+                    "Shortness of breath",
+                    "Weight gain",
+                    "Bloating",
+                    "Loss of appetite",
+                    "Nausea"
+                ],
+                "treatment": [
+                    "Low-sodium diet",
+                    "Diuretics to reduce fluid accumulation",
+                    "Paracentesis to drain excess fluid",
+                    "Treatment of underlying liver disease or heart failure",
+                    "Monitoring and managing complications (e.g., infection, kidney dysfunction)"
+                ]
+            },
+            {
+                "disease": "Acetaminophen (Tylenol) Liver Damage",
+                "symptoms": [
+                    "Nausea and vomiting",
+                    "Jaundice (yellowing of the skin and eyes)",
+                    "Fatigue",
+                    "Abdominal pain, particularly in the upper right side",
+                    "Confusion or cognitive issues in severe cases"
+                ],
+                "treatment": [
+                    "Immediate discontinuation of acetaminophen",
+                    "Administration of activated charcoal if within hours of overdose",
+                    "N-acetylcysteine (NAC) to prevent liver damage",
+                    "Hospitalization for severe cases",
+                    "Liver transplant in cases of acute liver failure"
+                ]
+            },
+            {
+                "disease": "Achalasia",
+                "symptoms": [
+                    "Difficulty swallowing (dysphagia)",
+                    "Regurgitation of undigested food",
+                    "Chest pain",
+                    "Weight loss",
+                    "Heartburn"
+                ],
+                "treatment": [
+                    "Pneumatic dilation to widen the esophagus",
+                    "Surgical myotomy (Heller myotomy)",
+                    "Botox injections to relax the esophageal muscles",
+                    "Medications to reduce esophageal pressure",
+                    "Dietary changes to ease swallowing"
+                ]
+            },
+            {
+                "disease": "Fever",
+                "symptoms": [
+                    "Generalized body aches",
+                    "Fever",
+                    "Fatigue",
+                    "Headache",
+                    "Muscle pain"
+                ],
+                "treatment": [
+                    "Over-the-counter pain relievers (e.g., acetaminophen, ibuprofen)",
+                    "Rest and hydration",
+                    "Cold compresses for fever",
+                    "Monitoring for signs of infection",
+                    "Consultation with a healthcare provider if symptoms persist"
+                ]
+            },
+            {
+                "disease": "Achilles Tendon Rupture",
+                "symptoms": [
+                    "Sudden sharp pain in the back of the ankle",
+                    "Swelling near the heel",
+                    "Inability to bend the foot downward or 'push off' when walking",
+                    "A popping or snapping sound at the time of injury"
+                ],
+                "treatment": [
+                    "Immobilization with a cast or brace",
+                    "Physical therapy to regain strength and flexibility",
+                    "Surgical repair in severe cases",
+                    "Gradual return to activity with guidance from a healthcare provider",
+                    "Pain management"
+                ]
+            },
+            {
+                "disease": "Achondroplasia",
+                "symptoms": [
+                    "Short stature",
+                    "Disproportionately short arms and legs",
+                    "Large head with prominent forehead",
+                    "Midface hypoplasia (underdeveloped facial features)",
+                    "Spinal stenosis and back pain"
+                ],
+                "treatment": [
+                    "Monitoring of growth and development",
+                    "Surgical intervention for spinal stenosis or bowed legs",
+                    "Physical therapy to improve mobility",
+                    "Genetic counseling",
+                    "Supportive care and management of complications"
+                ]
+            },
+            {
+                "disease": "Gastroesophageal Reflux ",
+                "symptoms": [
+                    "Heartburn",
+                    "Regurgitation of food or sour liquid",
+                    "Difficulty swallowing",
+                    "Chronic cough",
+                    "Hoarseness or sore throat"
+                ],
+                "treatment": [
+                    "Lifestyle changes (e.g., avoiding trigger foods, losing weight)",
+                    "Over-the-counter antacids or H2 blockers",
+                    "Prescription proton pump inhibitors (PPIs)",
+                    "Surgery (fundoplication) in severe cases",
+                    "Elevating the head of the bed to reduce nighttime symptoms"
+                ]
+            },
+            {
+                "disease": "Acne",
+                "symptoms": [
+                    "Whiteheads and blackheads",
+                    "Pimples (papules and pustules)",
+                    "Cystic lesions",
+                    "Scarring",
+                    "Inflamed, red skin"
+                ],
+                "treatment": [
+                    "Topical treatments (e.g., benzoyl peroxide, salicylic acid)",
+                    "Oral antibiotics for moderate to severe cases",
+                    "Hormonal treatments (e.g., oral contraceptives)",
+                    "Isotretinoin for severe cystic acne",
+                    "Lifestyle changes including diet and skincare routine"
+                ]
+            },
+            {
+                "disease": "Acne Scars",
+                "symptoms": [
+                    "Depressed or raised areas of the skin",
+                    "Discoloration (red or dark spots)",
+                    "Uneven skin texture",
+                    "Pitted or rolling scars"
+                ],
+                "treatment": [
+                    "Chemical peels or microdermabrasion",
+                    "Laser therapy",
+                    "Fillers for depressed scars",
+                    "Microneedling",
+                    "Topical treatments to lighten dark spots"
+                ]
+            },
+            {
+                "disease": "Acquired Brain Injury",
+                "symptoms": [
+                    "Cognitive difficulties (memory loss, confusion)",
+                    "Headaches",
+                    "Dizziness",
+                    "Behavioral changes (irritability, depression)",
+                    "Loss of motor skills"
+                ],
+                "treatment": [
+                    "Rehabilitation therapy (physical, occupational, speech)",
+                    "Medications to manage symptoms (e.g., pain, mood disorders)",
+                    "Cognitive behavioral therapy",
+                    "Surgery in cases of severe injury",
+                    "Supportive care and long-term management"
+                ]
+                }, 
+            
+                {
+                    "disease": "Bronchiectasis",
+                    "symptoms": [
+                        "Chronic cough",
+                        "Production of large amounts of mucus",
+                        "Shortness of breath",
+                        "Frequent respiratory infections",
+                        "Wheezing"
+                    ],
+                    "treatment": [
+                        "Chest physiotherapy to clear mucus",
+                        "Antibiotics for infections",
+                        "Bronchodilators to open airways",
+                        "Pulmonary rehabilitation",
+                        "Surgical removal of affected lung areas in severe cases"
+                    ]
+                },
+                {
+                    "disease": "Landau-Kleffner Syndrome (Acquired Epileptic Aphasia)",
+                    "symptoms": [
+                        "Sudden or gradual loss of language skills",
+                        "Seizures, often during sleep",
+                        "Behavioral issues such as hyperactivity or aggression",
+                        "Difficulty understanding spoken language",
+                        "Auditory verbal agnosia (inability to recognize words)"
+                    ],
+                    "treatment": [
+                        "Anti-seizure medications",
+                        "Speech therapy to improve language skills",
+                        "Corticosteroids to reduce brain inflammation",
+                        "Behavioral therapy",
+                        "Special education support"
+                    ]
+                },
+                {
+                    "disease": "Hydrocephalus (Acquired Hydrocephalus)",
+                    "symptoms": [
+                        "Headache",
+                        "Nausea and vomiting",
+                        "Blurred vision",
+                        "Balance problems",
+                        "Cognitive difficulties"
+                    ],
+                    "treatment": [
+                        "Surgical insertion of a shunt to drain excess fluid",
+                        "Endoscopic third ventriculostomy (ETV) in some cases",
+                        "Regular monitoring and follow-up care",
+                        "Physical therapy to improve motor skills",
+                        "Occupational therapy for cognitive challenges"
+                    ]
+                },
+                {
+                    "disease": "AIDS (Acquired Immunodeficiency Syndrome)",
+                    "symptoms": [
+                        "Frequent infections (e.g., pneumonia, tuberculosis)",
+                        "Rapid weight loss",
+                        "Chronic fatigue",
+                        "Swollen lymph nodes",
+                        "Night sweats"
+                    ],
+                    "treatment": [
+                        "Antiretroviral therapy (ART) to manage HIV and prevent progression to AIDS",
+                        "Treatment for opportunistic infections",
+                        "Regular monitoring of immune function (CD4 count)",
+                        "Nutritional support",
+                        "Psychosocial support and counseling"
+                    ]
+                },
+                {
+                    "disease": "Skin Tag (Acrochordon)",
+                    "symptoms": [
+                        "Small, soft, flesh-colored growths on the skin",
+                        "Usually painless",
+                        "Can become irritated by friction",
+                        "Commonly found on the neck, armpits, or groin",
+                        "May be single or multiple"
+                    ],
+                    "treatment": [
+                        "Cryotherapy (freezing the skin tag)",
+                        "Surgical removal",
+                        "Ligation (tying off the skin tag)",
+                        "Electrocautery",
+                        "Over-the-counter treatments in mild cases"
+                    ]
+                },
+                {
+                    "disease": "Cushing's Syndrome (ACTH-dependent/independent Hypercortisolism)",
+                    "symptoms": [
+                        "Weight gain, particularly around the abdomen and face",
+                        "Purple stretch marks on the skin",
+                        "High blood pressure",
+                        "Osteoporosis",
+                        "Muscle weakness"
+                    ],
+                    "treatment": [
+                        "Reducing or stopping corticosteroid use (if medication-induced)",
+                        "Surgery to remove tumors producing excess cortisol",
+                        "Radiation therapy for inoperable tumors",
+                        "Medications to control cortisol production",
+                        "Monitoring and managing complications (e.g., diabetes, high blood pressure)"
+                    ]
+                },
+                {
+                    "disease": "Actinic Keratosis",
+                    "symptoms": [
+                        "Rough, scaly patches on the skin",
+                        "Usually found on sun-exposed areas (e.g., face, ears, hands)",
+                        "Can be red, pink, or brown",
+                        "May be itchy or tender",
+                        "Potential to develop into skin cancer"
+                    ],
+                    "treatment": [
+                        "Cryotherapy (freezing the lesions)",
+                        "Topical treatments (e.g., 5-fluorouracil, imiquimod)",
+                        "Laser therapy",
+                        "Photodynamic therapy",
+                        "Regular skin examinations to monitor for changes"
+                    ]
+                },
+                {
+                    "disease": "Acoustic Neuroma (Vestibular Schwannoma)",
+                    "symptoms": [
+                        "Hearing loss, usually in one ear",
+                        "Ringing in the ear (tinnitus)",
+                        "Balance problems or dizziness",
+                        "Facial numbness or weakness",
+                        "Headache"
+                    ],
+                    "treatment": [
+                        "Observation with regular MRI scans for small, slow-growing tumors",
+                        "Surgical removal of the tumor",
+                        "Radiation therapy (stereotactic radiosurgery) for non-surgical candidates",
+                        "Hearing aids to manage hearing loss",
+                        "Physical therapy for balance issues"
+                    ]
+                },
+                {
+                    "disease": "Prostatitis (Acute and Chronic)",
+                    "symptoms": [
+                        "Pain in the groin, lower abdomen, or lower back",
+                        "Painful urination or ejaculation",
+                        "Frequent urination, especially at night",
+                        "Fever and chills (in acute cases)",
+                        "Difficulty urinating"
+                    ],
+                    "treatment": [
+                        "Antibiotics for bacterial prostatitis",
+                        "Alpha-blockers to relax bladder neck muscles",
+                        "Anti-inflammatory medications",
+                        "Physical therapy for chronic pelvic pain",
+                        "Surgical intervention in severe cases"
+                    ]
+                },
+                {
+                    "disease": "Acute Compartment Syndrome",
+                    "symptoms": [
+                        "Severe pain, especially when stretching the affected muscle",
+                        "Swelling and tightness in the affected area",
+                        "Numbness or tingling",
+                        "Decreased sensation in the area",
+                        "Paleness or shiny appearance of the skin"
+                    ],
+                    "treatment": [
+                        "Emergency fasciotomy (surgical decompression)",
+                        "Monitoring for complications (e.g., muscle or nerve damage)",
+                        "Pain management",
+                        "Physical therapy after recovery",
+                        "Monitoring and care to prevent recurrence"
+                    ]
+                },
+                {
+                    "disease": "Acute Kidney Failure",
+                    "symptoms": [
+                        "Decreased urine output",
+                        "Swelling in the legs, ankles, or feet",
+                        "Shortness of breath",
+                        "Fatigue",
+                        "Confusion"
+                    ],
+                    "treatment": [
+                        "Dialysis to remove waste products from the blood",
+                        "Medications to control blood pressure and restore kidney function",
+                        "Fluid management to prevent overload",
+                        "Treatment of underlying causes (e.g., infection, blockage)",
+                        "Monitoring and supportive care"
+                    ]
+                },
+                {
+                    "disease": "Acute Myeloid Leukemia (AML)",
+                    "symptoms": [
+                        "Fatigue",
+                        "Frequent infections",
+                        "Easy bruising or bleeding",
+                        "Bone or joint pain",
+                        "Pale skin"
+                    ],
+                    "treatment": [
+                        "Chemotherapy to destroy cancer cells",
+                        "Stem cell transplant in certain cases",
+                        "Targeted therapy to block cancer growth",
+                        "Supportive care to manage symptoms",
+                        "Regular monitoring and follow-up care"
+                    ]
+                },
+                {
+                    "disease": "Acute Pancreatitis",
+                    "symptoms": [
+                        "Severe abdominal pain, often radiating to the back",
+                        "Nausea and vomiting",
+                        "Fever",
+                        "Rapid pulse",
+                        "Tenderness in the abdomen"
+                    ],
+                    "treatment": [
+                        "Hospitalization for fluid and electrolyte management",
+                        "Pain relief with medications",
+                        "Fasting to rest the pancreas",
+                        "Treatment of underlying causes (e.g., gallstones, alcohol use)",
+                        "Monitoring for complications (e.g., infection, organ failure)"
+                    ]
+                },
+                {
+                    "disease": "Acute Respiratory Distress Syndrome (ARDS)",
+                    "symptoms": [
+                        "Severe shortness of breath",
+                        "Rapid breathing",
+                        "Low blood oxygen levels",
+                        "Confusion or fatigue",
+                        "Bluish tint to the skin, lips, or nails"
+                    ],
+                    "treatment": [
+                        "Mechanical ventilation to assist breathing",
+                        "Oxygen therapy",
+                        "Fluid management to prevent overload",
+                        "Medications to support blood pressure and heart function",
+                        "Treatment of underlying causes (e.g., infection, trauma)"
+                    ]
+                },
+                {
+                    "disease": "Acute Valley Fever (Coccidioidomycosis)",
+                    "symptoms": [
+                        "Fatigue",
+                        "Cough",
+                        "Fever",
+                        "Shortness of breath",
+                        "Muscle aches"
+                    ],
+                    "treatment": [
+                        "Antifungal medications for severe cases",
+                        "Rest and fluids for mild cases",
+                        "Pain relief with over-the-counter medications",
+                        "Monitoring for complications (e.g., chronic infection)",
+                        "Follow-up care to ensure recovery"
+                    ]
+                },
+                {
+                    "disease": "Attention Deficit Hyperactivity Disorder (ADHD)",
+                    "symptoms": [
+                        "Inattention",
+                        "Hyperactivity",
+                        "Impulsivity",
+                        "Difficulty focusing on tasks",
+                        "Frequent daydreaming"
+                    ],
+                    "treatment": [
+                        "Behavioral therapy",
+                        "Medications (e.g., stimulants, non-stimulants)",
+                        "Educational support and accommodations",
+                        "Parent training and support",
+                        "Lifestyle changes (e.g., regular exercise, structured routines)"
+                    ]
+                },
+                {
+                    "disease": "Addison Disease (Addison's Disease)",
+                    "symptoms": [
+                        "Chronic fatigue",
+                        "Muscle weakness",
+                        "Weight loss and decreased appetite",
+                        "Low blood pressure",
+                        "Darkening of the skin"
+                    ],
+                    "treatment": [
+                        "Hormone replacement therapy",
+                        "Regular monitoring of electrolytes and hormone levels",
+                        "Increased salt intake",
+                        "Emergency injection of corticosteroids for adrenal crisis",
+                        "Education on managing the condition and recognizing symptoms"
+                    ]
+                },
+                {
+                    "disease": "Adenomyosis",
+                    "symptoms": [
+                        "Heavy or prolonged menstrual bleeding",
+                        "Severe menstrual cramps",
+                        "Painful intercourse",
+                        "Chronic pelvic pain",
+                        "Abdominal bloating"
+                    ],
+                    "treatment": [
+                        "Pain relief with nonsteroidal anti-inflammatory drugs (NSAIDs)",
+                        "Hormonal therapy to reduce symptoms",
+                        "Uterine artery embolization",
+                        "Hysterectomy in severe cases",
+                        "Management of anemia due to heavy bleeding"
+                    ]
+                }
+        
+            ] 
+     
+                                                            
+        
+    
+                                                                

@@ -1,0 +1,252 @@
+{
+    "diseaseData": [
+      {
+        "name": "Diabetes",
+        "symptoms": [
+          "Increased thirst",
+          "Frequent urination",
+          "Extreme hunger",
+          "Unexplained weight loss",
+          "Fatigue",
+          "Blurred vision",
+          "Slow-healing sores"
+        ],
+        "cure": "Treatment includes lifestyle changes such as a healthy diet, regular exercise, monitoring blood sugar levels, and medications like insulin or oral hypoglycemics. Regular check-ups with a healthcare provider are essential for managing diabetes effectively."
+      },
+      {
+        "name": "Hypertension",
+        "symptoms": [
+          "Often asymptomatic",
+          "Headaches",
+          "Shortness of breath",
+          "Nosebleeds",
+          "Blurred vision",
+          "Chest pain",
+          "Dizziness"
+        ],
+        "cure": "Management includes lifestyle changes such as reducing salt intake, regular exercise, stress management, and medications like ACE inhibitors, beta-blockers, or diuretics. Regular monitoring of blood pressure is crucial."
+      },
+      {
+        "name": "Asthma",
+        "symptoms": [
+          "Shortness of breath",
+          "Chest tightness",
+          "Wheezing",
+          "Coughing, especially at night or early morning",
+          "Difficulty breathing"
+        ],
+        "cure": "Treatment includes avoiding triggers, using inhalers (bronchodilators and steroids), long-term control medications, and regular monitoring of lung function. An action plan is also important to manage asthma attacks."
+      },
+      {
+        "name": "Cancer",
+        "symptoms": [
+          "Varies widely depending on the type",
+          "Unexplained weight loss",
+          "Fatigue",
+          "Lumps or swelling",
+          "Changes in skin",
+          "Persistent cough",
+          "Unexplained bleeding"
+        ],
+        "cure": "Treatment depends on the type and stage of cancer and may include surgery, chemotherapy, radiation therapy, immunotherapy, targeted drug therapy, and palliative care for symptom management."
+      },
+      {
+        "name": "Arthritis",
+        "symptoms": [
+          "Joint pain",
+          "Stiffness",
+          "Swelling",
+          "Redness",
+          "Decreased range of motion"
+        ],
+        "cure": "Management includes pain relievers, anti-inflammatory medications, physical therapy, lifestyle changes, joint protection techniques, and in severe cases, surgery. Regular exercise and weight management are important."
+      },
+      {
+        "name": "Heart",
+        "symptoms": [
+          "Chest pain (angina)",
+          "Shortness of breath",
+          "Fatigue",
+          "Swelling in the legs",
+          "Irregular heartbeat"
+        ],
+        "cure": "Treatment includes lifestyle changes such as a heart-healthy diet, regular exercise, quitting smoking, medications, and procedures or surgeries like angioplasty, stent placement, or bypass surgery."
+      },
+      {
+        "name": "Stroke",
+        "symptoms": [
+          "Sudden numbness or weakness in the face, arm, or leg",
+          "Confusion",
+          "Trouble speaking or understanding speech",
+          "Vision problems",
+          "Difficulty walking",
+          "Severe headache"
+        ],
+        "cure": "Immediate medical attention is critical. Treatment includes clot-busting drugs, surgery, rehabilitation therapies, and lifestyle changes to prevent recurrence. Long-term management focuses on controlling risk factors like hypertension and diabetes."
+      },
+      {
+        "name": "Kidney",
+        "symptoms": [
+          "Fatigue",
+          "Swelling in the legs and ankles",
+          "Shortness of breath",
+          "Nausea",
+          "Confusion",
+          "Persistent itching"
+        ],
+        "cure": "Management includes medications to control symptoms, dietary restrictions, blood pressure control, dialysis, and in advanced cases, kidney transplant."
+      },
+      {
+        "name": "Alzheimer",
+        "symptoms": [
+          "Memory loss",
+          "Confusion",
+          "Difficulty with problem-solving",
+          "Changes in mood and behavior",
+          "Difficulty speaking, swallowing, or walking in advanced stages"
+        ],
+        "cure": "No cure exists, but treatments focus on managing symptoms. Medications like cholinesterase inhibitors and memantine can help with memory and cognition. Supportive care, mental stimulation, and a structured environment are also important."
+      },
+      {
+        "name": "Parkinson",
+        "symptoms": [
+          "Tremor",
+          "Slowed movement",
+          "Muscle stiffness",
+          "Impaired posture and balance",
+          "Speech changes",
+          "Writing changes"
+        ],
+        "cure": "Treatment includes medications like levodopa, dopamine agonists, and MAO-B inhibitors, as well as physical therapy, exercise, and in some cases, surgery such as deep brain stimulation."
+      },
+      {
+        "name": "Sclerosis",
+        "symptoms": [
+          "Numbness or weakness in limbs",
+          "Electric-shock sensations with neck movements",
+          "Tremor",
+          "Lack of coordination",
+          "Vision problems",
+          "Fatigue",
+          "Dizziness"
+        ],
+        "cure": "No cure exists, but treatments can manage symptoms and slow progression. Options include corticosteroids, disease-modifying therapies, physical therapy, and symptomatic treatments like muscle relaxants."
+      },
+      {
+        "name": "Bone Marrow Transplant",
+        "symptoms": [
+          "Applicable for conditions like leukemia or lymphoma",
+          "Related symptoms include fatigue, infections, and anemia from the underlying disease"
+        ],
+        "cure": "This is a procedure rather than a disease treatment. It involves replacing damaged or destroyed bone marrow with healthy marrow or stem cells. Treatment includes chemotherapy, radiation, and transplant procedures."
+      },
+      {
+        "name": "Brain aneurysm",
+        "symptoms": [
+          "Sudden severe headache",
+          "Nausea",
+          "Blurred vision",
+          "Sensitivity to light",
+          "Seizure",
+          "Loss of consciousness"
+        ],
+        "cure": "Treatment options include surgical clipping, endovascular coiling, and flow diverters. Immediate medical intervention is critical in case of rupture to prevent life-threatening complications."
+      },
+      {
+        "name": "Breast Cancer",
+        "symptoms": [
+          "Lump in the breast",
+          "Change in breast shape or size",
+          "Nipple discharge",
+          "Redness or flaky skin on the breast",
+          "Pain in the breast"
+        ],
+        "cure": "Treatment options include surgery, chemotherapy, radiation therapy, hormone therapy, and targeted therapy. Early detection through regular screening is key to effective treatment."
+      },
+      {
+        "name": "Colon Cancer",
+        "symptoms": [
+          "Changes in bowel habits",
+          "Blood in the stool",
+          "Abdominal discomfort",
+          "Unexplained weight loss",
+          "Fatigue"
+        ],
+        "cure": "Treatment includes surgery, chemotherapy, radiation therapy, targeted therapy, and immunotherapy. Early screening and polyp removal can prevent progression to cancer."
+      },
+      {
+        "name": "Brain Tumor",
+        "symptoms": [
+          "New or worsening headaches",
+          "Seizures",
+          "Vision problems",
+          "Nausea and vomiting",
+          "Behavioral changes",
+          "Balance problems"
+        ],
+        "cure": "Treatment depends on the type and location of the tumor and may include surgery, radiation therapy, chemotherapy, and targeted drug therapy."
+      },
+      {
+        "name": "Glioma",
+        "symptoms": [
+          "Headaches",
+          "Seizures",
+          "Nausea and vomiting",
+          "Memory loss",
+          "Personality changes",
+          "Vision problems"
+        ],
+        "cure": "Treatment options include surgery, radiation therapy, and chemotherapy. The approach depends on the tumor's type, location, and size."
+      },
+      {
+        "name": "Congenital Heart Disease",
+        "symptoms": [
+          "Bluish skin",
+          "Rapid breathing",
+          "Fatigue",
+          "Poor blood circulation",
+          "Heart murmur"
+        ],
+        "cure": "Treatment varies by defect and may include medication, catheter procedures, surgery, and in some cases, heart transplantation. Lifelong monitoring and treatment are often required."
+      },
+      {
+        "name": "Heart Transplant",
+        "symptoms": [
+          "Applicable for severe heart failure",
+          "Symptoms include severe fatigue, shortness of breath, and fluid buildup"
+        ],
+        "cure": "This is a surgical procedure rather than a disease treatment. It involves replacing a failing heart with a healthy donor heart. Post-transplant care includes immunosuppressive medications and regular monitoring."
+      },
+      {
+        "name": "Testicular Cancer",
+        "symptoms": [
+          "Lump in the testicle",
+          "Heaviness in the scrotum",
+          "Dull ache in the abdomen or groin",
+          "Enlargement of breast tissue"
+        ],
+        "cure": "Treatment options include surgery, radiation therapy, and chemotherapy. Regular self-examinations can help in early detection."
+      },
+      {
+        "name": "Migraine",
+        "symptoms": [
+          "Severe throbbing headache",
+          "Sensitivity to light and sound",
+          "Nausea and vomiting",
+          "Aura (visual disturbances)"
+        ],
+        "cure": "Treatment includes pain relief medications, preventive medications, lifestyle changes, and avoiding known triggers. Medications like triptans and anti-nausea drugs are commonly used."
+      },
+      {
+        "name": "Obsessive-Compulsive Disorder",
+        "symptoms": [
+          "Recurrent, unwanted thoughts (obsessions)",
+          "Repetitive behaviors (compulsions)",
+          "Anxiety when not performing compulsive acts",
+          "Time-consuming rituals"
+        ],
+        "cure": "Treatment includes cognitive-behavioral therapy (CBT), particularly exposure and response prevention (ERP), medications like SSRIs, and sometimes a combination of therapy and medication. Lifestyle changes and support groups can also help."
+      }
+    ]
+  }
+  

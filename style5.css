@@ -1,0 +1,369 @@
+.add_doc form input[type="file"] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    background-color: rgb(121, 123, 228);
+    color: white;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    height: auto
+}
+
+.specialization {
+    display: flex;
+    flex-direction: column;
+}
+
+.specialization div {
+    display: flex;
+    gap: 10px
+}
+
+#patient {
+    color: White;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#patient_report {
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.middle-one img,
+.middle-t img {
+    height: 500px
+}
+
+.symptoms {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: auto;
+    border-radius: 12px;
+    background-color: rgb(31, 31, 59);
+    display: none;
+}
+
+.symptoms input {
+    /* width:70%; */
+    margin-left: 9%;
+    margin-top: 3%;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 1px solid rgb(173, 173, 207);
+    color: rgb(116, 116, 218)
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-container input[type="text"] {
+    width: 144%;
+    padding: 10px 40px 10px 20px;
+    /* Adjust padding to make room for the icon */
+    font-size: 16px;
+    border-radius: 20px;
+    /* Rounded corners */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left: 20%
+}
+
+.search-container svg {
+    position: absolute;
+    left: 150%;
+    /* Position the icon inside the input field */
+    top: 60%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    fill: #888;
+    /* Color of the icon */
+    cursor: pointer;
+}
+
+.symptoms .result {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    margin-top: 1%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px
+}
+
+.symptoms .cross {
+    margin-left: 96%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup.visible {
+    display: block;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.visible {
+    display: block;
+}
+
+.clinic {
+    margin-right: 0px;
+    width: 40%;
+}
+
+.loginchoice {
+    height: auto;
+}
+
+.loginchoice .register-clinic {
+    margin-top: 3%;
+    margin-left: 30%;
+}
+
+.clinic-login-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.clinic-login-form h2 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.submit-group {
+    text-align: center;
+}
+
+.submit-group button {
+    padding: 10px 15px;
+    background-color: rgb(121, 123, 228);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-group button:hover {
+    background-color: rgb(109, 109, 173);
+}
+
+.clinic-login-form {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -47%);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    /* Apply the blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    display: none;
+}
+
+.clinic-login-form h2 {
+    color: White
+}
+
+.clinic-login-form input {
+    width: 94%
+}
+
+.clinic-login-form::placeholder {
+    font-weight: bold;
+}
+
+.clinic-login-form .cross {
+    margin-left: 97%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.clinic-login-form img {
+    width: 60px;
+    height: 50px;
+
+}
+
+.clinic-login-form .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+h5 {
+    color: white
+}
+
+.add_doc {
+    margin-top: 170px
+}
+
+.cho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 23px
+}
+
+.cho div {
+    background-color: rgb(121, 123, 228);
+    color: white;
+    font-weight: bolder;
+    border-radius: 12px;
+    padding: 10px;
+    border: 4px solid rgb(109, 109, 173);
+    cursor: pointer;
+    width: 60px
+}
+
+.cho :nth-child(2) {
+    background-color: transparent;
+}
+
+.clinic_signup input {
+    background-color: rgb(116, 116, 218);
+    padding: 10px;
+    border: none;
+    margin-top: 4px;
+    color: White;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.clinic_signup input::placeholder {
+    color: white;
+    opacity: 0.6;
+}
+
+.clinic_signup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+}
+
+.clinic_signup button {
+    background-color: rgb(111, 112, 211);
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin-left: 26%
+}
+
+.clinic_signup p {
+    color: rgb(173, 173, 207);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#clinic {
+    margin-left: 440px;
+    border: 5px solid transparent;
+    width: 60%;
+    margin: 0px;
+    margin-top: 8%;
+    position: relative;
+    top: 50%;
+    left: 17%;
+    padding: 8px
+}
+#clinic-login-form .error-cli{
+    color:green;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border:2px solid red
+}

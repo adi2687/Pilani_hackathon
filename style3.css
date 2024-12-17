@@ -1,0 +1,110 @@
+.forms .loginform{
+    display: none;
+    width:140%;
+    margin-left:0%
+}
+.forms .loginform.disp{display: block;}
+.forms .loginform input{
+    width:100%
+}
+.loginform button{
+    width:100%;
+    margin-left:4%
+}
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginchoice{
+    width:30%;
+    height:30%
+}
+
+.loginchoice :nth-child(3){
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top:10%;
+    margin-left:27%;
+    color:white
+}
+
+
+.loginchoice {
+    width: 40%;
+    padding: 30px;
+    backdrop-filter: blur(12px);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Drop shadow for modern look */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Arial', sans-serif;
+}
+
+.loginchoice h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -40px;
+}
+
+.option {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.option:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+.register-clinic {
+    background-color: rgb(116, 116, 193); /* Blue color for the button */
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right:160px
+}
+
+.register-clinic:hover {
+    background-color: rgb(83, 83, 197);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .loginchoice {
+        width: 90%;
+    }
+
+    .option {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .register-clinic {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}

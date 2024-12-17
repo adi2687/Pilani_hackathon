@@ -1,0 +1,26 @@
+.forms .loginform{
+    display: none;
+    width:140%;
+    margin-left:-30%
+}
+.forms .loginform.disp{display: block;}
+.forms .loginform input{
+    width:100%
+}
+.loginform button{
+    width:100%;
+    margin-left:4%
+}
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginchoice{
+    width:30%;
+    height:30%
+}
+
+.loginchoice :nth-child(3){
+    margin-top:30%
+}

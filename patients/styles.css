@@ -1,0 +1,89 @@
+ /* General Styles */
+ body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the details */
+.details-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header styling */
+.details-container h2 {
+    color: #6a1b9a;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Detail list styling */
+.details-container .appointment {
+    border: 1px solid #6a1b9a;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f9f5ff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Detail hover effect */
+.details-container .appointment:hover {
+    background-color: #e8dff5;
+    transform: scale(1.02);
+}
+
+/* Appointment details styling */
+.details-container .appointment p {
+    margin: 5px 0;
+    color: #4a148c;
+}
+
+/* Special effects for the detail container */
+.details-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+}
+
+/* Loading animation */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #6a1b9a;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error and success messages */
+.message {
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.message.error {
+    background-color: #d32f2f;
+}
+
+.message.success {
+    background-color: #388e3c;
+}
